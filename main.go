@@ -89,7 +89,6 @@ func localConfirmedCase(rawValue string, sheetName string, exportName string) {
 		}
 		localConfirmed.provinces = append(localConfirmed.provinces, province)
 	}
-	//fmt.Println(localConfirmed)
 	export(localConfirmed, exportName)
 }
 
@@ -112,7 +111,6 @@ func overseasConfirmedCase(rawValue string) {
 		start += 6
 		overseasInput.provinces = append(overseasInput.provinces, province)
 	}
-	//fmt.Println(overseasInput)
 	export(overseasInput, "overseasInput.xlsx")
 }
 
